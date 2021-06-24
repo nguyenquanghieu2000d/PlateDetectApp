@@ -399,6 +399,14 @@ class Ui_Main(object):
         self.btnHienThiOutputVideo = True
         self.btnLoadModelEnable = True
 
+        self.btnStopInputVideo.setEnabled(False)
+        self.btnStartInputVideo.setEnabled(False)
+        self.btnPauseInputVideo.setEnabled(False)
+
+        self.btnStopOutputVideo.setEnabled(False)
+        self.btnStartOutputVideo.setEnabled(False)
+        self.btnPauseOutputVideo.setEnabled(False)
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -495,6 +503,7 @@ class Ui_Main(object):
         image.setPixmap(QPixmap.fromImage(imag))
 
     def TaiAnhAction(self):
+
         try:
             if self.ImagePath:
                 self.ImageModeMainImage = cv2.imread(self.ImagePath)
@@ -584,6 +593,11 @@ class Ui_Main(object):
         return videoOutput
 
     def TaiVideoAction(self):
+        self.btnStopInputVideo.setEnabled(False)
+        self.btnStartInputVideo.setEnabled(False)
+        self.btnPauseInputVideo.setEnabled(False)
+
+
         if self.VideoPath == "" or self.VideoPath is None:
             return
         try:
@@ -594,6 +608,9 @@ class Ui_Main(object):
             self.mediaPlayerInput.setMedia(QMediaContent())
             self.mediaPlayerInput.setMedia(QMediaContent(QUrl(self.VideoPath)))
             self.mediaPlayerInput.play()
+            self.btnStopInputVideo.setEnabled(True)
+            self.btnStartInputVideo.setEnabled(True)
+            self.btnPauseInputVideo.setEnabled(True)
         except:
             string = "Sai định dạng hãy chọn video nhé !!"
             # self.VideoPath = ""
@@ -636,6 +653,9 @@ class Ui_Main(object):
         self.btnTaiVideoEnable = True
         self.thongBao("Định vị thành công")
         self.assignValue()
+        self.btnStopOutputVideo.setEnabled(True)
+        self.btnStartOutputVideo.setEnabled(True)
+        self.btnPauseOutputVideo.setEnabled(True)
 
     def NhanDienVideo(self):
         if self.btnDetectVideoEnable == False:
