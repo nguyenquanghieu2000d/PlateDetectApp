@@ -734,13 +734,13 @@ QPushButton:pressed {
        <x>30</x>
        <y>200</y>
        <width>201</width>
-       <height>31</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>Segoe UI</family>
-       <pointsize>14</pointsize>
+       <pointsize>12</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -813,7 +813,7 @@ QPushButton:pressed {
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>250</y>
+       <y>260</y>
        <width>201</width>
        <height>71</height>
       </rect>
