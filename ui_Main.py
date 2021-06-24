@@ -447,9 +447,13 @@ class Ui_Main(object):
 
         try:
             self.ui = Dialogg()
-            self.modelPath = self.ui.openFileNameDialog()
+
+            path = self.ui.openFileNameDialog()
+            if path == "" or path is None:
+                return
+            self.modelPath = path
         except:
-            self.modelPath = ""
+            pass
 
         try:
             if self.modelPath:
@@ -587,6 +591,8 @@ class Ui_Main(object):
             types = ["mp4"]
             for i in types:
                 assert self.VideoPath.split(".")[-1] == i
+            print(self.VideoPath)
+            self.mediaPlayerInput.setMedia(QMediaContent())
             self.mediaPlayerInput.setMedia(QMediaContent(QUrl(self.VideoPath)))
             self.mediaPlayerInput.play()
         except:
@@ -614,10 +620,13 @@ class Ui_Main(object):
 
 
     def loadDetectVideoAction(self):
+        self.mediaPlayerOutput.setMedia(QMediaContent())
         self.mediaPlayerOutput.setMedia(QMediaContent(QUrl(self.detectPath)))
+        print(self.detectPath)
         self.mediaPlayerOutput.play()
 
     def assignValue(self):
+
         self.detectPath = self.worker.path
         self.detectPath = "/".join(self.detectPath.split("\\"))
         self.lbThoiGianVideo.setText("Thời gian định vị: " + str(self.worker.time) + " giây")
@@ -629,6 +638,7 @@ class Ui_Main(object):
         self.btnDetectVideoEnable = True
         self.btnTaiVideoEnable = True
         self.thongBao("Định vị thành công")
+        self.assignValue()
 
     def NhanDienVideo(self):
         if self.btnDetectVideoEnable == False:
@@ -652,7 +662,7 @@ class Ui_Main(object):
             self.worker.finished.connect(self.worker.deleteLater)
             self.thread.finished.connect(self.thread.deleteLater)
             self.worker.progress.connect(self.reportProgress)
-            self.thread.finished.connect(self.assignValue)
+            # self.thread.finished.connect(self.assignValue)
             self.thread.start()
 
             # status
@@ -704,7 +714,7 @@ class Ui_Main(object):
         self.btnStartInputVideo.clicked.connect(self.mediaPlayerInput.play)
         self.btnPauseInputVideo.clicked.connect(self.mediaPlayerInput.pause)
         self.btnStopInputVideo.clicked.connect(self.mediaPlayerInput.stop)
-        self.btnStartOutputVideo.clicked.connect(self.mediaPlayerOutput.play)
+        self.btnStartOutputVideo.clicked.connect(self.loadDetectVideoAction)
         self.btnPauseOutputVideo.clicked.connect(self.mediaPlayerOutput.pause)
         self.btnStopOutputVideo.clicked.connect(self.mediaPlayerOutput.stop)
         self.btnDetectVideo.clicked.connect(self.NhanDienVideo)
