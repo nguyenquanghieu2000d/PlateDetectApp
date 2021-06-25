@@ -386,84 +386,84 @@ class Ui_Main(object):
             QtCore.QMetaObject.connectSlotsByName(MainWindow)
         else:
             MainWindow.setObjectName("MainWindow")
-            MainWindow.resize(1570, 884)
+            MainWindow.resize(1761, 872)
             MainWindow.setStyleSheet("background-color: rgb(27, 29, 35); color:white")
             self.centralwidget = QtWidgets.QWidget(MainWindow)
             self.centralwidget.setObjectName("centralwidget")
             self.title = QtWidgets.QLabel(self.centralwidget)
-            self.title.setGeometry(QtCore.QRect(0, 0, 1561, 81))
+            self.title.setGeometry(QtCore.QRect(330, 0, 1431, 61))
             font = QtGui.QFont()
             font.setFamily("Segoe UI")
             font.setPointSize(20)
             font.setBold(True)
             font.setWeight(75)
             self.title.setFont(font)
-            self.title.setStyleSheet("")
+            self.title.setStyleSheet("background-color: rgb(52, 59, 72);")
             self.title.setAlignment(QtCore.Qt.AlignCenter)
             self.title.setObjectName("title")
             self.frameImage = QtWidgets.QFrame(self.centralwidget)
-            self.frameImage.setGeometry(QtCore.QRect(270, 90, 1291, 771))
+            self.frameImage.setGeometry(QtCore.QRect(340, 70, 1421, 791))
             self.frameImage.setFrameShape(QtWidgets.QFrame.StyledPanel)
             self.frameImage.setFrameShadow(QtWidgets.QFrame.Raised)
             self.frameImage.setObjectName("frameImage")
             self.btnHienThiInput = QtWidgets.QPushButton(self.frameImage)
-            self.btnHienThiInput.setGeometry(QtCore.QRect(310, 690, 301, 81))
+            self.btnHienThiInput.setGeometry(QtCore.QRect(340, 710, 321, 61))
             font = QtGui.QFont()
-            font.setPointSize(20)
+            font.setPointSize(18)
             self.btnHienThiInput.setFont(font)
             self.btnHienThiInput.setStyleSheet("QPushButton {\n"
-                                               "    border: 2px solid rgb(52, 59, 72);\n"
-                                               "    border-radius: 5px;    \n"
-                                               "    background-color: rgb(52, 59, 72);\n"
-                                               "}\n"
-                                               "QPushButton:hover {\n"
-                                               "    background-color: rgb(57, 65, 80);\n"
-                                               "    border: 2px solid rgb(61, 70, 86);\n"
-                                               "}\n"
-                                               "QPushButton:pressed {    \n"
-                                               "    background-color: rgb(35, 40, 49);\n"
-                                               "    border: 2px solid rgb(43, 50, 61);\n"
-                                               "}")
+    "    border: 2px solid rgb(52, 59, 72);\n"
+    "    border-radius: 5px;    \n"
+    "    background-color: rgb(52, 59, 72);\n"
+    "}\n"
+    "QPushButton:hover {\n"
+    "    background-color: rgb(57, 65, 80);\n"
+    "    border: 2px solid rgb(61, 70, 86);\n"
+    "}\n"
+    "QPushButton:pressed {    \n"
+    "    background-color: rgb(35, 40, 49);\n"
+    "    border: 2px solid rgb(43, 50, 61);\n"
+    "}")
             self.btnHienThiInput.setObjectName("btnHienThiInput")
             self.line = QtWidgets.QFrame(self.frameImage)
-            self.line.setGeometry(QtCore.QRect(610, 0, 51, 781))
+            self.line.setGeometry(QtCore.QRect(670, 0, 51, 781))
             self.line.setFrameShape(QtWidgets.QFrame.VLine)
             self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
             self.line.setObjectName("line")
             self.imgChuaDetect = QtWidgets.QLabel(self.frameImage)
-            self.imgChuaDetect.setGeometry(QtCore.QRect(10, 50, 600, 600))
+            self.imgChuaDetect.setGeometry(QtCore.QRect(10, 50, 650, 600))
             self.imgChuaDetect.setStyleSheet("QLabel{\n"
-                                             "    background: rgb(38, 38, 38)\n"
-                                             "}")
+    "    background: rgb(38, 38, 38)\n"
+    "}")
             self.imgChuaDetect.setFrameShape(QtWidgets.QFrame.Box)
             self.imgChuaDetect.setFrameShadow(QtWidgets.QFrame.Raised)
             self.imgChuaDetect.setLineWidth(7)
             self.imgChuaDetect.setText("")
             self.imgChuaDetect.setObjectName("imgChuaDetect")
             self.btnDetectImage = QtWidgets.QPushButton(self.frameImage)
-            self.btnDetectImage.setGeometry(QtCore.QRect(10, 690, 291, 81))
+            self.btnDetectImage.setGeometry(QtCore.QRect(10, 710, 321, 61))
             font = QtGui.QFont()
-            font.setPointSize(20)
+            font.setPointSize(18)
             self.btnDetectImage.setFont(font)
             self.btnDetectImage.setStyleSheet("QPushButton {\n"
-                                              "    border: 2px solid rgb(52, 59, 72);\n"
-                                              "    border-radius: 5px;    \n"
-                                              "    background-color: rgb(52, 59, 72);\n"
-                                              "}\n"
-                                              "QPushButton:hover {\n"
-                                              "    background-color: rgb(57, 65, 80);\n"
-                                              "    border: 2px solid rgb(61, 70, 86);\n"
-                                              "}\n"
-                                              "QPushButton:pressed {    \n"
-                                              "    background-color: rgb(35, 40, 49);\n"
-                                              "    border: 2px solid rgb(43, 50, 61);\n"
-                                              "}")
+    "    border: 2px solid rgb(52, 59, 72);\n"
+    "    border-radius: 5px;    \n"
+    "    background-color: rgb(52, 59, 72);\n"
+    "}\n"
+    "QPushButton:hover {\n"
+    "    background-color: rgb(57, 65, 80);\n"
+    "    border: 2px solid rgb(61, 70, 86);\n"
+    "}\n"
+    "QPushButton:pressed {    \n"
+    "    background-color: rgb(35, 40, 49);\n"
+    "    border: 2px solid rgb(43, 50, 61);\n"
+    "}")
             self.btnDetectImage.setObjectName("btnDetectImage")
             self.imgDaDetect = QtWidgets.QLabel(self.frameImage)
-            self.imgDaDetect.setGeometry(QtCore.QRect(660, 50, 600, 600))
+            self.imgDaDetect.setGeometry(QtCore.QRect(730, 50, 650, 600))
             self.imgDaDetect.setStyleSheet("QLabel{\n"
-                                           "    background: rgb(38, 38, 38)\n"
-                                           "}")
+    "    background: rgb(38, 38, 38)\n"
+    "}")
             self.imgDaDetect.setFrameShape(QtWidgets.QFrame.Box)
             self.imgDaDetect.setFrameShadow(QtWidgets.QFrame.Raised)
             self.imgDaDetect.setLineWidth(7)
@@ -475,59 +475,59 @@ class Ui_Main(object):
             font.setPointSize(16)
             self.btnTaiAnh.setFont(font)
             self.btnTaiAnh.setStyleSheet("QPushButton {\n"
-                                         "    border: 2px solid rgb(52, 59, 72);\n"
-                                         "    border-radius: 5px;    \n"
-                                         "    background-color: rgb(52, 59, 72);\n"
-                                         "}\n"
-                                         "QPushButton:hover {\n"
-                                         "    background-color: rgb(57, 65, 80);\n"
-                                         "    border: 2px solid rgb(61, 70, 86);\n"
-                                         "}\n"
-                                         "QPushButton:pressed {    \n"
-                                         "    background-color: rgb(35, 40, 49);\n"
-                                         "    border: 2px solid rgb(43, 50, 61);\n"
-                                         "}")
+    "    border: 2px solid rgb(52, 59, 72);\n"
+    "    border-radius: 5px;    \n"
+    "    background-color: rgb(52, 59, 72);\n"
+    "}\n"
+    "QPushButton:hover {\n"
+    "    background-color: rgb(57, 65, 80);\n"
+    "    border: 2px solid rgb(61, 70, 86);\n"
+    "}\n"
+    "QPushButton:pressed {    \n"
+    "    background-color: rgb(35, 40, 49);\n"
+    "    border: 2px solid rgb(43, 50, 61);\n"
+    "}")
             self.btnTaiAnh.setObjectName("btnTaiAnh")
-            self.lbKetQua = QtWidgets.QLabel(self.frameImage)
-            self.lbKetQua.setGeometry(QtCore.QRect(660, 0, 101, 41))
-            font = QtGui.QFont()
-            font.setPointSize(14)
-            self.lbKetQua.setFont(font)
-            self.lbKetQua.setObjectName("lbKetQua")
             self.lbAnhDauVao = QtWidgets.QLabel(self.frameImage)
-            self.lbAnhDauVao.setGeometry(QtCore.QRect(190, 0, 321, 41))
+            self.lbAnhDauVao.setGeometry(QtCore.QRect(190, 0, 291, 41))
             font = QtGui.QFont()
             font.setPointSize(16)
             self.lbAnhDauVao.setFont(font)
             self.lbAnhDauVao.setObjectName("lbAnhDauVao")
-            self.lbThoiGian = QtWidgets.QLabel(self.frameImage)
-            self.lbThoiGian.setGeometry(QtCore.QRect(810, 0, 371, 41))
+            self.btnHienThiOutput = QtWidgets.QPushButton(self.frameImage)
+            self.btnHienThiOutput.setGeometry(QtCore.QRect(730, 710, 371, 61))
             font = QtGui.QFont()
-            font.setPointSize(14)
+            font.setPointSize(18)
+            self.btnHienThiOutput.setFont(font)
+            self.btnHienThiOutput.setStyleSheet("QPushButton {\n"
+    "    border: 2px solid rgb(52, 59, 72);\n"
+    "    border-radius: 5px;    \n"
+    "    background-color: rgb(52, 59, 72);\n"
+    "}\n"
+    "QPushButton:hover {\n"
+    "    background-color: rgb(57, 65, 80);\n"
+    "    border: 2px solid rgb(61, 70, 86);\n"
+    "}\n"
+    "QPushButton:pressed {    \n"
+    "    background-color: rgb(35, 40, 49);\n"
+    "    border: 2px solid rgb(43, 50, 61);\n"
+    "}")
+            self.btnHienThiOutput.setObjectName("btnHienThiOutput")
+            self.lbThoiGian = QtWidgets.QLabel(self.frameImage)
+            self.lbThoiGian.setGeometry(QtCore.QRect(900, -2, 471, 51))
+            font = QtGui.QFont()
+            font.setPointSize(16)
             self.lbThoiGian.setFont(font)
             self.lbThoiGian.setText("")
             self.lbThoiGian.setObjectName("lbThoiGian")
-            self.btnHienThiOutput = QtWidgets.QPushButton(self.frameImage)
-            self.btnHienThiOutput.setGeometry(QtCore.QRect(660, 690, 371, 81))
+            self.lbKetQua = QtWidgets.QLabel(self.frameImage)
+            self.lbKetQua.setGeometry(QtCore.QRect(730, -2, 141, 51))
             font = QtGui.QFont()
-            font.setPointSize(20)
-            self.btnHienThiOutput.setFont(font)
-            self.btnHienThiOutput.setStyleSheet("QPushButton {\n"
-                                                "    border: 2px solid rgb(52, 59, 72);\n"
-                                                "    border-radius: 5px;    \n"
-                                                "    background-color: rgb(52, 59, 72);\n"
-                                                "}\n"
-                                                "QPushButton:hover {\n"
-                                                "    background-color: rgb(57, 65, 80);\n"
-                                                "    border: 2px solid rgb(61, 70, 86);\n"
-                                                "}\n"
-                                                "QPushButton:pressed {    \n"
-                                                "    background-color: rgb(35, 40, 49);\n"
-                                                "    border: 2px solid rgb(43, 50, 61);\n"
-                                                "}")
-            self.btnHienThiOutput.setObjectName("btnHienThiOutput")
+            font.setPointSize(16)
+            self.lbKetQua.setFont(font)
+            self.lbKetQua.setObjectName("lbKetQua")
             self.frameVideo = QtWidgets.QFrame(self.frameImage)
-            self.frameVideo.setGeometry(QtCore.QRect(0, 0, 1291, 791))
+            self.frameVideo.setGeometry(QtCore.QRect(0, 0, 1421, 861))
             font = QtGui.QFont()
             font.setPointSize(14)
             self.frameVideo.setFont(font)
@@ -535,44 +535,44 @@ class Ui_Main(object):
             self.frameVideo.setFrameShadow(QtWidgets.QFrame.Raised)
             self.frameVideo.setObjectName("frameVideo")
             self.line_2 = QtWidgets.QFrame(self.frameVideo)
-            self.line_2.setGeometry(QtCore.QRect(610, 0, 51, 791))
+            self.line_2.setGeometry(QtCore.QRect(670, -10, 51, 791))
             self.line_2.setFrameShape(QtWidgets.QFrame.VLine)
             self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
             self.line_2.setObjectName("line_2")
             self.videoChuaDetect = QtWidgets.QLabel(self.frameVideo)
-            self.videoChuaDetect.setGeometry(QtCore.QRect(10, 50, 600, 600))
+            self.videoChuaDetect.setGeometry(QtCore.QRect(10, 50, 650, 600))
             self.videoChuaDetect.setStyleSheet("QLabel{\n"
-                                               "    background: rgb(38, 38, 38)\n"
-                                               "}")
+    "    background: rgb(38, 38, 38)\n"
+    "}")
             self.videoChuaDetect.setFrameShape(QtWidgets.QFrame.Box)
             self.videoChuaDetect.setFrameShadow(QtWidgets.QFrame.Raised)
             self.videoChuaDetect.setLineWidth(7)
             self.videoChuaDetect.setText("")
             self.videoChuaDetect.setObjectName("videoChuaDetect")
             self.btnDetectVideo = QtWidgets.QPushButton(self.frameVideo)
-            self.btnDetectVideo.setGeometry(QtCore.QRect(10, 720, 291, 51))
+            self.btnDetectVideo.setGeometry(QtCore.QRect(10, 720, 321, 51))
             font = QtGui.QFont()
             font.setPointSize(16)
             self.btnDetectVideo.setFont(font)
             self.btnDetectVideo.setStyleSheet("QPushButton {\n"
-                                              "    border: 2px solid rgb(52, 59, 72);\n"
-                                              "    border-radius: 5px;    \n"
-                                              "    background-color: rgb(52, 59, 72);\n"
-                                              "}\n"
-                                              "QPushButton:hover {\n"
-                                              "    background-color: rgb(57, 65, 80);\n"
-                                              "    border: 2px solid rgb(61, 70, 86);\n"
-                                              "}\n"
-                                              "QPushButton:pressed {    \n"
-                                              "    background-color: rgb(35, 40, 49);\n"
-                                              "    border: 2px solid rgb(43, 50, 61);\n"
-                                              "}")
+    "    border: 2px solid rgb(52, 59, 72);\n"
+    "    border-radius: 5px;    \n"
+    "    background-color: rgb(52, 59, 72);\n"
+    "}\n"
+    "QPushButton:hover {\n"
+    "    background-color: rgb(57, 65, 80);\n"
+    "    border: 2px solid rgb(61, 70, 86);\n"
+    "}\n"
+    "QPushButton:pressed {    \n"
+    "    background-color: rgb(35, 40, 49);\n"
+    "    border: 2px solid rgb(43, 50, 61);\n"
+    "}")
             self.btnDetectVideo.setObjectName("btnDetectVideo")
             self.videoDaDetect = QtWidgets.QLabel(self.frameVideo)
-            self.videoDaDetect.setGeometry(QtCore.QRect(660, 50, 600, 600))
+            self.videoDaDetect.setGeometry(QtCore.QRect(730, 50, 650, 600))
             self.videoDaDetect.setStyleSheet("QLabel{\n"
-                                             "    background: rgb(38, 38, 38)\n"
-                                             "}")
+    "    background: rgb(38, 38, 38)\n"
+    "}")
             self.videoDaDetect.setFrameShape(QtWidgets.QFrame.Box)
             self.videoDaDetect.setFrameShadow(QtWidgets.QFrame.Raised)
             self.videoDaDetect.setLineWidth(7)
@@ -584,25 +584,19 @@ class Ui_Main(object):
             font.setPointSize(16)
             self.btnTaiVideo.setFont(font)
             self.btnTaiVideo.setStyleSheet("QPushButton {\n"
-                                           "    border: 2px solid rgb(52, 59, 72);\n"
-                                           "    border-radius: 5px;    \n"
-                                           "    background-color: rgb(52, 59, 72);\n"
-                                           "}\n"
-                                           "QPushButton:hover {\n"
-                                           "    background-color: rgb(57, 65, 80);\n"
-                                           "    border: 2px solid rgb(61, 70, 86);\n"
-                                           "}\n"
-                                           "QPushButton:pressed {    \n"
-                                           "    background-color: rgb(35, 40, 49);\n"
-                                           "    border: 2px solid rgb(43, 50, 61);\n"
-                                           "}")
+    "    border: 2px solid rgb(52, 59, 72);\n"
+    "    border-radius: 5px;    \n"
+    "    background-color: rgb(52, 59, 72);\n"
+    "}\n"
+    "QPushButton:hover {\n"
+    "    background-color: rgb(57, 65, 80);\n"
+    "    border: 2px solid rgb(61, 70, 86);\n"
+    "}\n"
+    "QPushButton:pressed {    \n"
+    "    background-color: rgb(35, 40, 49);\n"
+    "    border: 2px solid rgb(43, 50, 61);\n"
+    "}")
             self.btnTaiVideo.setObjectName("btnTaiVideo")
-            self.lbKetQuaVideo = QtWidgets.QLabel(self.frameVideo)
-            self.lbKetQuaVideo.setGeometry(QtCore.QRect(660, 0, 101, 41))
-            font = QtGui.QFont()
-            font.setPointSize(16)
-            self.lbKetQuaVideo.setFont(font)
-            self.lbKetQuaVideo.setObjectName("lbKetQuaVideo")
             self.lbVideoInput = QtWidgets.QLabel(self.frameVideo)
             self.lbVideoInput.setGeometry(QtCore.QRect(190, 0, 321, 41))
             font = QtGui.QFont()
@@ -610,103 +604,110 @@ class Ui_Main(object):
             self.lbVideoInput.setFont(font)
             self.lbVideoInput.setObjectName("lbVideoInput")
             self.lbThoiGianVideo = QtWidgets.QLabel(self.frameVideo)
-            self.lbThoiGianVideo.setGeometry(QtCore.QRect(764, -2, 371, 41))
+            self.lbThoiGianVideo.setGeometry(QtCore.QRect(850, 0, 521, 41))
             font = QtGui.QFont()
             font.setPointSize(16)
             self.lbThoiGianVideo.setFont(font)
             self.lbThoiGianVideo.setText("")
             self.lbThoiGianVideo.setObjectName("lbThoiGianVideo")
             self.btnHienThiInputVideo = QtWidgets.QPushButton(self.frameVideo)
-            self.btnHienThiInputVideo.setGeometry(QtCore.QRect(310, 720, 301, 51))
+            self.btnHienThiInputVideo.setGeometry(QtCore.QRect(340, 720, 321, 51))
             font = QtGui.QFont()
             font.setPointSize(16)
             self.btnHienThiInputVideo.setFont(font)
             self.btnHienThiInputVideo.setStyleSheet("QPushButton {\n"
-                                                    "    border: 2px solid rgb(52, 59, 72);\n"
-                                                    "    border-radius: 5px;    \n"
-                                                    "    background-color: rgb(52, 59, 72);\n"
-                                                    "}\n"
-                                                    "QPushButton:hover {\n"
-                                                    "    background-color: rgb(57, 65, 80);\n"
-                                                    "    border: 2px solid rgb(61, 70, 86);\n"
-                                                    "}\n"
-                                                    "QPushButton:pressed {    \n"
-                                                    "    background-color: rgb(35, 40, 49);\n"
-                                                    "    border: 2px solid rgb(43, 50, 61);\n"
-                                                    "}")
+    "    border: 2px solid rgb(52, 59, 72);\n"
+    "    border-radius: 5px;    \n"
+    "    background-color: rgb(52, 59, 72);\n"
+    "}\n"
+    "QPushButton:hover {\n"
+    "    background-color: rgb(57, 65, 80);\n"
+    "    border: 2px solid rgb(61, 70, 86);\n"
+    "}\n"
+    "QPushButton:pressed {    \n"
+    "    background-color: rgb(35, 40, 49);\n"
+    "    border: 2px solid rgb(43, 50, 61);\n"
+    "}")
             self.btnHienThiInputVideo.setObjectName("btnHienThiInputVideo")
             self.btnHienThiOutputVideo = QtWidgets.QPushButton(self.frameVideo)
-            self.btnHienThiOutputVideo.setGeometry(QtCore.QRect(660, 720, 301, 51))
+            self.btnHienThiOutputVideo.setGeometry(QtCore.QRect(730, 720, 321, 51))
             font = QtGui.QFont()
             font.setPointSize(16)
             self.btnHienThiOutputVideo.setFont(font)
             self.btnHienThiOutputVideo.setStyleSheet("QPushButton {\n"
-                                                     "    border: 2px solid rgb(52, 59, 72);\n"
-                                                     "    border-radius: 5px;    \n"
-                                                     "    background-color: rgb(52, 59, 72);\n"
-                                                     "}\n"
-                                                     "QPushButton:hover {\n"
-                                                     "    background-color: rgb(57, 65, 80);\n"
-                                                     "    border: 2px solid rgb(61, 70, 86);\n"
-                                                     "}\n"
-                                                     "QPushButton:pressed {    \n"
-                                                     "    background-color: rgb(35, 40, 49);\n"
-                                                     "    border: 2px solid rgb(43, 50, 61);\n"
-                                                     "}")
+    "    border: 2px solid rgb(52, 59, 72);\n"
+    "    border-radius: 5px;    \n"
+    "    background-color: rgb(52, 59, 72);\n"
+    "}\n"
+    "QPushButton:hover {\n"
+    "    background-color: rgb(57, 65, 80);\n"
+    "    border: 2px solid rgb(61, 70, 86);\n"
+    "}\n"
+    "QPushButton:pressed {    \n"
+    "    background-color: rgb(35, 40, 49);\n"
+    "    border: 2px solid rgb(43, 50, 61);\n"
+    "}")
             self.btnHienThiOutputVideo.setObjectName("btnHienThiOutputVideo")
-            self.btnStartInputVideo = QtWidgets.QPushButton(self.frameVideo)
-            self.btnStartInputVideo.setGeometry(QtCore.QRect(190, 660, 61, 41))
-            font = QtGui.QFont()
-            font.setPointSize(12)
-            self.btnStartInputVideo.setFont(font)
-            self.btnStartInputVideo.setObjectName("btnStartInputVideo")
-            self.btnPauseInputVideo = QtWidgets.QPushButton(self.frameVideo)
-            self.btnPauseInputVideo.setGeometry(QtCore.QRect(260, 660, 61, 41))
-            font = QtGui.QFont()
-            font.setPointSize(12)
-            self.btnPauseInputVideo.setFont(font)
-            self.btnPauseInputVideo.setObjectName("btnPauseInputVideo")
-            self.btnStopInputVideo = QtWidgets.QPushButton(self.frameVideo)
-            self.btnStopInputVideo.setGeometry(QtCore.QRect(330, 660, 61, 41))
-            font = QtGui.QFont()
-            font.setPointSize(12)
-            self.btnStopInputVideo.setFont(font)
-            self.btnStopInputVideo.setObjectName("btnStopInputVideo")
             self.btnStopOutputVideo = QtWidgets.QPushButton(self.frameVideo)
-            self.btnStopOutputVideo.setGeometry(QtCore.QRect(1000, 670, 61, 41))
+            self.btnStopOutputVideo.setGeometry(QtCore.QRect(1110, 660, 91, 51))
             font = QtGui.QFont()
             font.setPointSize(12)
             self.btnStopOutputVideo.setFont(font)
             self.btnStopOutputVideo.setObjectName("btnStopOutputVideo")
             self.btnStartOutputVideo = QtWidgets.QPushButton(self.frameVideo)
-            self.btnStartOutputVideo.setGeometry(QtCore.QRect(860, 670, 61, 41))
+            self.btnStartOutputVideo.setGeometry(QtCore.QRect(910, 660, 91, 51))
             font = QtGui.QFont()
             font.setPointSize(12)
             self.btnStartOutputVideo.setFont(font)
             self.btnStartOutputVideo.setObjectName("btnStartOutputVideo")
             self.btnPauseOutputVideo = QtWidgets.QPushButton(self.frameVideo)
-            self.btnPauseOutputVideo.setGeometry(QtCore.QRect(930, 670, 61, 41))
+            self.btnPauseOutputVideo.setGeometry(QtCore.QRect(1010, 660, 91, 51))
             font = QtGui.QFont()
             font.setPointSize(12)
             self.btnPauseOutputVideo.setFont(font)
             self.btnPauseOutputVideo.setObjectName("btnPauseOutputVideo")
             self.pbVideoDetect = QtWidgets.QProgressBar(self.frameVideo)
-            self.pbVideoDetect.setGeometry(QtCore.QRect(980, 720, 271, 51))
+            self.pbVideoDetect.setGeometry(QtCore.QRect(1060, 730, 321, 31))
             font = QtGui.QFont()
             font.setPointSize(12)
             self.pbVideoDetect.setFont(font)
             self.pbVideoDetect.setProperty("value", 0)
             self.pbVideoDetect.setObjectName("pbVideoDetect")
+            self.btnPauseInputVideo = QtWidgets.QPushButton(self.frameVideo)
+            self.btnPauseInputVideo.setGeometry(QtCore.QRect(290, 660, 91, 51))
+            font = QtGui.QFont()
+            font.setPointSize(12)
+            self.btnPauseInputVideo.setFont(font)
+            self.btnPauseInputVideo.setObjectName("btnPauseInputVideo")
+            self.btnStopInputVideo = QtWidgets.QPushButton(self.frameVideo)
+            self.btnStopInputVideo.setGeometry(QtCore.QRect(390, 660, 91, 51))
+            font = QtGui.QFont()
+            font.setPointSize(12)
+            self.btnStopInputVideo.setFont(font)
+            self.btnStopInputVideo.setObjectName("btnStopInputVideo")
+            self.btnStartInputVideo = QtWidgets.QPushButton(self.frameVideo)
+            self.btnStartInputVideo.setGeometry(QtCore.QRect(190, 660, 91, 51))
+            font = QtGui.QFont()
+            font.setPointSize(12)
+            self.btnStartInputVideo.setFont(font)
+            self.btnStartInputVideo.setObjectName("btnStartInputVideo")
+            self.lbKetQuaVideo = QtWidgets.QLabel(self.frameVideo)
+            self.lbKetQuaVideo.setGeometry(QtCore.QRect(730, 0, 101, 41))
+            font = QtGui.QFont()
+            font.setPointSize(16)
+            self.lbKetQuaVideo.setFont(font)
+            self.lbKetQuaVideo.setObjectName("lbKetQuaVideo")
             self.frame_2 = QtWidgets.QFrame(self.centralwidget)
-            self.frame_2.setGeometry(QtCore.QRect(0, 90, 261, 771))
+            self.frame_2.setGeometry(QtCore.QRect(0, 0, 331, 861))
+            self.frame_2.setStyleSheet("background: rgb(38, 38, 38)")
             self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
             self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
             self.frame_2.setObjectName("frame_2")
             self.lbTenModel = QtWidgets.QLabel(self.frame_2)
-            self.lbTenModel.setGeometry(QtCore.QRect(30, 200, 201, 41))
+            self.lbTenModel.setGeometry(QtCore.QRect(30, 190, 271, 51))
             font = QtGui.QFont()
             font.setFamily("Segoe UI")
-            font.setPointSize(12)
+            font.setPointSize(14)
             font.setBold(True)
             font.setWeight(75)
             self.lbTenModel.setFont(font)
@@ -721,35 +722,36 @@ class Ui_Main(object):
             self.status.setText("")
             self.status.setObjectName("status")
             self.btnVideoMode = QtWidgets.QPushButton(self.frame_2)
-            self.btnVideoMode.setGeometry(QtCore.QRect(30, 110, 201, 71))
+            self.btnVideoMode.setGeometry(QtCore.QRect(30, 110, 271, 71))
             font = QtGui.QFont()
             font.setPointSize(16)
             self.btnVideoMode.setFont(font)
             self.btnVideoMode.setObjectName("btnVideoMode")
             self.btnImageMode = QtWidgets.QPushButton(self.frame_2)
-            self.btnImageMode.setGeometry(QtCore.QRect(30, 30, 201, 71))
+            self.btnImageMode.setGeometry(QtCore.QRect(30, 30, 271, 71))
             font = QtGui.QFont()
             font.setPointSize(16)
             self.btnImageMode.setFont(font)
+            self.btnImageMode.setStyleSheet("")
             self.btnImageMode.setObjectName("btnImageMode")
             self.btnLoadModel = QtWidgets.QPushButton(self.frame_2)
-            self.btnLoadModel.setGeometry(QtCore.QRect(30, 260, 201, 71))
+            self.btnLoadModel.setGeometry(QtCore.QRect(30, 260, 271, 51))
             font = QtGui.QFont()
             font.setPointSize(16)
             self.btnLoadModel.setFont(font)
             self.btnLoadModel.setStyleSheet("QPushButton {\n"
-                                            "    border: 2px solid rgb(52, 59, 72);\n"
-                                            "    border-radius: 5px;    \n"
-                                            "    background-color: rgb(52, 59, 72);\n"
-                                            "}\n"
-                                            "QPushButton:hover {\n"
-                                            "    background-color: rgb(57, 65, 80);\n"
-                                            "    border: 2px solid rgb(61, 70, 86);\n"
-                                            "}\n"
-                                            "QPushButton:pressed {    \n"
-                                            "    background-color: rgb(35, 40, 49);\n"
-                                            "    border: 2px solid rgb(43, 50, 61);\n"
-                                            "}")
+    "    border: 2px solid rgb(52, 59, 72);\n"
+    "    border-radius: 5px;    \n"
+    "    background-color: rgb(52, 59, 72);\n"
+    "}\n"
+    "QPushButton:hover {\n"
+    "    background-color: rgb(57, 65, 80);\n"
+    "    border: 2px solid rgb(61, 70, 86);\n"
+    "}\n"
+    "QPushButton:pressed {    \n"
+    "    background-color: rgb(35, 40, 49);\n"
+    "    border: 2px solid rgb(43, 50, 61);\n"
+    "}")
             self.btnLoadModel.setObjectName("btnLoadModel")
             MainWindow.setCentralWidget(self.centralwidget)
             self.statusbar = QtWidgets.QStatusBar(MainWindow)

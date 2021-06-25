@@ -91,26 +91,43 @@ class htldYolov5Detect:
                 t1 = time_synchronized()
                 pred = self.model(img, augment=self.augment)[0]
 
+
                 # Apply NMS
                 pred = non_max_suppression(pred, self.conf_thres, self.iou_thres, classes=self.classes,
                                            agnostic=self.agnostic_nms)
+                # print(pred)
+
                 t2 = time_synchronized()
 
                 # Process detections
                 for i, det in enumerate(pred):  # detections per image
+                    # print("-------DET--------")
+                    # print(det)
+                    # print("------DET END------")
                     p, s, im0, frame = path, '', im0s.copy(), getattr(dataset, 'frame', 0)
+                    # print("---- img ---- :",img.shape)
                     s += '%gx%g ' % img.shape[2:]  # print string
+                    # print(s)
                     if len(det):
                         # Rescale boxes from img_size to im0 size
                         det[:, :4] = scale_coords(img.shape[2:], det[:, :4], im0.shape).round()
-
+                        # print("-------DET AFTER SCALE--------")
+                        # print(det)
+                        # print("------DET END AFTER SCALE------")
                         # Print results
                         for c in det[:, -1].unique():
                             n = (det[:, -1] == c).sum()  # detections per class
+                            # print(" ---- n ----- : ", n)
+                            # print(" ---- name ---- : ", names)
                             s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
 
                         # Write results
                         for *xyxy, conf, cls in reversed(det):
+                            # print( "------ xyxy ---------")
+                            # print(*xyxy)
+                            # print(conf)
+                            # print(cls)
+                            # print( "------ xyxy ---------")
                             # Add bbox to image
                             c = int(cls)  # integer class
                             label = None if self.hide_labels else (
@@ -200,14 +217,14 @@ class htldYolov5Detect:
 
 # a = htldYolov5Detect()
 # start = time.time()
-# a.LoadModel(modelPath=os.path.join(YOLOV5_PATH, "MyModel/best.pt"))
+# a.LoadModel(modelPath="C:/hieu/NhapMonHocMay/PlateDetectApp/models/Sbest.pt")
 # end = time.time()
 # print(end - start)
 # start = time.time()
-# img = a.detectVideo(os.path.join(YOLOV5_PATH, "data/images/vid1.mp4"))
+# img,_ = a.detectImage("C:/hieu/NhapMonHocMay/PlateDetectApp/image/dir")
 # end = time.time()
 # print(end - start)
-
-# img = cv2.resize(img, (1000, 1000))
+#
+# img= cv2.resize(img, (1000, 1000))
 # cv2.imshow("", img)
 # cv2.waitKey(0)
